@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import Image4 from "../assets/image4.jpg";
-import Image9 from "../assets/image9.jpg";
-import Image13 from "../assets/image13.jpg";
-import Image17 from "../assets/image7.jpg";
+import Image4 from "../assets/Image4.jpg";
+import Image9 from "../assets/Image9.jpg";
+import Image13 from "../assets/Image13.jpg";
+import Image17 from "../assets/Image7.jpg";
 
 
 const images = [Image4, Image9, Image13,Image17];
