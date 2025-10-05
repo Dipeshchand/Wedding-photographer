@@ -10,6 +10,7 @@ import Image17 from "../assets/Image7.jpg";
 const images = [Image4, Image9, Image13,Image17];
 
 const Hero = () => {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -22,7 +23,7 @@ const Hero = () => {
 
   return (
     <div
-      className="w-full h-[90vh] bg-cover bg-center flex items-center justify-center transition-all duration-1000 relative"
+      className="w-full h-screen bg-cover bg-center flex items-center justify-center transition-all duration-1000 relative"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >
       {/* Social icons */}
