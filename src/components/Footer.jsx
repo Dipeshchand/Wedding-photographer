@@ -1,53 +1,32 @@
-import React from 'react';
+import React from "react";
 import { FcLike } from "react-icons/fc";
-// Note: You do NOT need to import a separate CSS file when using Tailwind.
-
-const GOOGLE_MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.218524451717!2d-122.41941568468165!3d37.77492977975876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808798150417%3A0x6b4904c965e8a56!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1628173456789!5m2!1sen!2sus"; 
-// ^^^ REPLACE THIS WITH YOUR OWN GOOGLE MAPS EMBED URL ^^^
 
 const Footer = () => {
   return (
-    // Outer footer container: dark background, white text, padding
-    <footer className="bg-gray-800 text-white pt-10 pb-6">
-      
-      {/* Container for the links:
-        1. flex-col: Stack vertically by default (on mobile).
-        2. md:flex-row: Switch to horizontal row on medium screens (md) and up.
-        3. justify-center: Center the content horizontally.
-        4. gap-5: Add space between items.
-      */}
-      <div className='flex flex-col  text-gray-400   md:flex-row justify-center gap-5 md:gap-8'>
-        
-        {/*
-          Link Items:
-          1. py-1: Add slight vertical padding for touch targets on mobile.
-          2. text-center: Ensure text is centered when stacked vertically.
-        */}
-        <span className='py-1 text-center underline'>Services</span>
-        <div className='py-1 text-center hover:underline'>Wedding Photography</div>
-        <div className='py-1 text-center hover:underline'>Pre-Wedding Photography</div>
-        <div className='py-1 text-center hover:underline'>Wedding Teaser</div>
-        <div className='py-1 text-center hover:underline'>Pre Wedding Film</div>
-        <div className='py-1 text-center hover:underline'>Cinematic Full Wedding Film</div>
-        <ul></ul>
-
-          <div>
-      <div style={{ height: "1px", backgroundColor: "white", width: "100%" }}></div>
-    </div>
-      </div>
-      
-      {/* Optional: Add Copyright or other bottom text */}
-      <div className='text-center text-smmt-6 text-sm mt-2'>
-          &copy; {new Date().getFullYear()} MemoriesPhotography All rights Reserved I Made <br />
-          <div className='flex justify-center'>
-            with 
-            <div className='mt-1 ml-1'><FcLike /> </div>
-            <div className='ml-1'>
-              by Addweb
-              </div>
-            </div> 
+    <footer className="bg-gray-900 text-gray-300 pt-10 pb-6">
+      {/* Services Section */}
+      <div className="flex flex-col items-center text-center md:flex-row md:justify-center md:items-start gap-4 md:gap-10 px-4 md:px-0">
+        <div className="font-semibold text-white underline">Services</div>
+        <div className="hover:underline cursor-pointer">Wedding Photography</div>
+        <div className="hover:underline cursor-pointer">Pre-Wedding Photography</div>
+        <div className="hover:underline cursor-pointer">Wedding Teaser</div>
+        <div className="hover:underline cursor-pointer">Pre Wedding Film</div>
+        <div className="hover:underline cursor-pointer">Cinematic Full Wedding Film</div>
       </div>
 
+      {/* Divider */}
+      <div className="border-t border-gray-700 mt-6 mx-6 md:mx-20"></div>
+
+      {/* Copyright */}
+      <div className="text-center text-sm mt-6 px-4">
+        &copy; {new Date().getFullYear()} <span className="font-semibold text-white">Memories Photography</span> — All rights reserved.
+        <br className="md:hidden" />
+        <div className="flex justify-center items-center mt-2">
+          <span>Made with</span>
+          <FcLike className="mx-1 text-lg" />
+          <span className="font-semibold text-white">by AddWeb</span>
+        </div>
+      </div>
     </footer>
   );
 };
