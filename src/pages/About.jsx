@@ -12,7 +12,9 @@ function About() {
           style={{ fontFamily: "Allura, cursive" }}
         >
           About Us
+        
         </p>
+         <span className="border-b-4 border-yellow-500 w-29 md:w-36 mt-2"></span>
       </div>
 
       {/* Celebrating Love */}

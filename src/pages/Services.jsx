@@ -32,7 +32,7 @@ const servicesData = [
 
 // Placeholder for Footer component (Assuming it's a separate component you use)
 function Footer() {
-    return <footer className="bg-gray-800 text-white p-6 text-center">Your Footer Content Here</footer>;
+    return 
 }
 
 function Services() {
@@ -53,6 +53,7 @@ function Services() {
         >
           Designing Exceptional Weddings
         </p>
+        
 
         {/* 3. Main Description */}
         <div className="flex justify-center mt-8 sm:mt-10 px-2 sm:px-4">
@@ -71,6 +72,7 @@ function Services() {
         <div className="flex justify-center mt-12 sm:mt-16 text-3xl sm:text-4xl" style={{fontFamily:"Allura, cursive"}}> 
           <p> Services</p>
         </div>
+        
 
         {/* 5. Services Cards Container (Responsive Grid/Stack) */}
         <div className="flex flex-wrap justify-center gap-6 mt-8 mb-12">

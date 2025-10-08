@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ReachUs from "./components/ReachUs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               path="/"
               element={
                 <>
+                  {/* <Header /> */}
                   <Home />
                   <ServicesSection />
                   <Gallery />
@@ -32,6 +34,7 @@ function App() {
               path="/services"
               element={
                 <>
+                  {/* <Header /> */}
                   <Services />
                   <Footer />
                 </>
@@ -41,15 +44,22 @@ function App() {
               path="/about"
               element={
                 <>
+                  {/* <Header /> */}
                   <About />
                   <Footer />
                 </>
               }
             />
-            <Route path="/contact" element= {  <>
-            <Contact />
-            <Footer/>
-            </> } />
+            <Route
+              path="/contact"
+              element={
+                <>
+                  {/* <Header /> */}
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
           </Routes>
         </div>
       </div>
