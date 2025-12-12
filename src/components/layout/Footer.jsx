@@ -28,14 +28,19 @@ export default function Footer() {
           <Link  to="/testimonials" className="hover:opacity-70 transition">Youtube</Link >
           <Link  to="/about" className="hover:opacity-70 transition font-bold">About</Link >
           <Link  to="/contact" className="hover:opacity-70 transition">Contact Us</Link >
-          <Link  to="/privacy" className="hover:opacity-70 transition">Privacy Policy</Link >
         </div>
       </div>
 
           <div className="flex gap-4 justify-center mt-6 ">
+              <a href="https://www.instagram.com/rudraclicks?igsh=MXRmaWdjOWx2ZW05eg%3D%3D">
             <FaInstagram  size={25}/>
+              </a>
+              <a href="https://www.youtube.com/@clicksbyrudra">
             <FaYoutube   size={25}/>
+              </a>
+              <a href="https://wa.me/918374659575">
             <FaWhatsapp   size={25}/>
+              </a>
           </div>
       {/* COPYRIGHT */}
       <div className="text-center text-gray-600 text-sm mt-10">

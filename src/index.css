@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@1,400&display=swap');
 @import "tailwindcss";
-
 @keyframes slideFadeDown {
   0% {
     opacity: 0;

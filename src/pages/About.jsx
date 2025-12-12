@@ -1,4 +1,4 @@
-import cover1 from "../assets/images/cover1.png"
+import cover1 from "../assets/images/cover1.png";
 export default function About() {
   return (
     <section className="w-full bg-[#F7F4ED]   py-20 px-6">
@@ -35,9 +35,15 @@ export default function About() {
             </p>
           </div>
         </div>
+        <p
+          className="text-base md:text-lg lg:text-xl mt-10 font-serif italic"
+          style={{ fontFamily: "Baskervville, serif" }}
+        >
+          So I'm extremely delighted we found your love story!
+        </p>
       </div>
-          <div className="mt-20">
-        <img src={cover1}/>
+      <div className="mt-20">
+        <img src={cover1} />
       </div>
     </section>
   );
