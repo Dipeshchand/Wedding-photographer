@@ -1,6 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="w-full bg-[#F6F3EC] py-16 px-6 border-t border-gray-300">
@@ -21,13 +22,13 @@ export default function Footer() {
         {/* RIGHT SIDE — LINKS */}
         <div className="flex flex-col space-y-3 text-gray-900 text-lg items-center">
 
-          <a href="/" className="hover:opacity-70 transition">Home</a>
-          <a href="/about" className="hover:opacity-70 transition">About Us</a>
-          <a href="/portfolio" className="hover:opacity-70 transition">Portfolio</a>
-          <a href="/testimonials" className="hover:opacity-70 transition">Youtube</a>
-          <a href="/about" className="hover:opacity-70 transition font-bold">About</a>
-          <a href="/contact" className="hover:opacity-70 transition">Contact Us</a>
-          <a href="/privacy" className="hover:opacity-70 transition">Privacy Policy</a>
+          <Link  to="/" className="hover:opacity-70 transition">Home</Link  >
+          <Link  to="/about" className="hover:opacity-70 transition">About Us</Link >
+          <Link  to="/portfolio" className="hover:opacity-70 transition">Portfolio</Link >
+          <Link  to="/testimonials" className="hover:opacity-70 transition">Youtube</Link >
+          <Link  to="/about" className="hover:opacity-70 transition font-bold">About</Link >
+          <Link  to="/contact" className="hover:opacity-70 transition">Contact Us</Link >
+          <Link  to="/privacy" className="hover:opacity-70 transition">Privacy Policy</Link >
         </div>
       </div>
 
