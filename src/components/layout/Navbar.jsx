@@ -10,9 +10,10 @@ export default function Navbar() {
   flex items-center justify-between">
       
       {/* Logo */}
-      <h1 className="text-2xl md:text-4xl font-serif font-bold tracking-wide">
-        RC
+      <h1 className="text-2xl md:text-4xl font-bold font-[Cormorant_Garamond] tracking-wide">
+         Rudra Clicks
       </h1>
+      {/* font-serif font that changed */}
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-10 text-lg font-light">
@@ -35,11 +36,11 @@ export default function Navbar() {
       <div
   className={`absolute left-0 w-full bg-white/70 backdrop-blur-xl 
     md:hidden transition-all duration-500 ease-out overflow-hidden
-    rounded-3xl border-b border-white/40
-    ${menuOpen ? "max-h-40 opacity-100 top-16" : "max-h-0 opacity-0 top-12"}
+    rounded-b-2xl border-b border-white/40
+    ${menuOpen ? "max-h-40 opacity-100 top-15" : "max-h-0 opacity-0 top-12"}
   `}
 >
-  <ul className="flex flex-row flex-wrap justify-center items-center gap-6 text-lg font-medium py-4 px-5">
+  <ul className="flex flex-row flex-wrap justify-center font-[Cormorant_Garamond]   items-center gap-5 text-lg font-medium py-4 px-5">
     <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
     <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
     <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
@@ -50,3 +51,4 @@ export default function Navbar() {
     </nav>
   );
 }
+0

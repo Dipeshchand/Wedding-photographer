@@ -7,7 +7,7 @@ function VideoCard({ video }) {
 
   return (
     <div
-      className="relative rounded-xl overflow-hidden shadow-lg bg-white cursor-pointer group"
+      className="relative rounded-xl overflow-hidden shadow-lg bg-[#F6F3EC] cursor-pointer group"
       onClick={() => setPlay(true)}
     >
       {!play ? (
@@ -69,12 +69,12 @@ export default function YouTubeFeed() {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-[#F6F3EC]" >
       <h2 className="text-3xl font-bold text-center mb-6">
         🎥 Latest Wedding Videos
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-6">
         {videos.map((video) => (
           <VideoCard key={video.id.videoId} video={video} />
         ))}

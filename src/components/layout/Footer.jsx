@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
       {/* COPYRIGHT */}
       <div className="text-center text-gray-600 text-sm mt-10">
-        Copyright © 2025 WeFoundALoveStory.
+        Copyright © 2025 Rudra Clicks.
       </div>
     </footer>
   );

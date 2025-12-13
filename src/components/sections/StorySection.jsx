@@ -35,7 +35,7 @@ export default function StorySection() {
           {/* BACK IMAGE */}
           <img
             src={img1}
-            className="w-[250px] md:w-[400px] lg:w-[450px]  translate-x-16    rounded-lg shadow-lg opacity-90"
+            className="w-[250px] md:w-[400px] lg:w-[450px]  translate-x-16  rounded-lg shadow-lg opacity-90"
           />
 
           {/* FRONT IMAGE */}
