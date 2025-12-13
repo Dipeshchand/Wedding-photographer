@@ -51,9 +51,9 @@ export default function IntroPage() {
               >
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-baskervville mb-4">
-                    WFLS.
-                  </h1>
-                  <button
+                    Rudra Clicks
+                  </h1>  
+                  <button 
                     onClick={() => navigate("/home")}
                     className="px-6 py-2.5 bg-[#5A3F33] text-white rounded-full"
                   >

@@ -17,7 +17,7 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-10 text-lg font-light">
-        <Link to="/" className="hover:opacity-70">Home</Link>
+        <Link to="/home" className="hover:opacity-70">Home</Link>
         <Link to="/about" className="hover:opacity-70">About</Link>
         <Link to="/portfolio" className="hover:opacity-70">Portfolio</Link>
         <Link to="/testimonials" className="hover:opacity-70">Wedding Films</Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
   `}
 >
   <ul className="flex flex-row flex-wrap justify-center font-[Cormorant_Garamond]   items-center gap-5 text-lg font-medium py-4 px-5">
-    <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+    <Link to="/home" onClick={() => setMenuOpen(false)}>Home</Link>
     <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
     <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
     <Link to="/testimonials" onClick={() => setMenuOpen(false)}>Wedding Films</Link>
